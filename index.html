@@ -11,83 +11,29 @@
 </script>
 <head>
 
- <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KBJR58VN');</script>
 <!-- End Google Tag Manager -->
- 
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Noumenon Analytica | GA4 Implementation |Digital Intelligence & Analytics Consulting</title>
-
-<meta name="description" content="Noumenon Analytica is a digital analytics consulting firm specializing in GA4 implementation, marketing intelligence, server-side tracking, and measurement architecture.">
-
-<meta name="keywords" content="GA4 implementation, analytics consulting, marketing analytics, data strategy, digital analytics consulting">
-
-<meta name="author" content="Noumenon Analytica">
-
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://noumenonanalytica.com">
-
-<link rel="icon" href="/favicon.ico">
-
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<!-- Open Graph -->
-
-<meta property="og:title" content="Noumenon Analytica | Digital Intelligence & Analytics Consulting">
-
-<meta property="og:description" content="Noumenon Analytica helps companies implement GA4, server-side tracking, and modern analytics infrastructure for data-driven growth.">
-
-<meta property="og:type" content="website">
-
-<meta property="og:url" content="https://noumenonanalytica.com">
-
-<meta property="og:image" content="https://noumenonanalytica.com/preview.jpg">
-
-<meta property="og:site_name" content="Noumenon Analytica">
-
-<!-- Twitter -->
-
-<meta name="twitter:card" content="summary_large_image">
-
-<meta name="twitter:title" content="Noumenon Analytica | Digital Intelligence">
-
-<meta name="twitter:description" content="Analytics consulting focused on GA4 implementation and marketing intelligence.">
-
-<meta name="twitter:image" content="https://noumenonanalytica.com/preview.jpg">
-
-<!-- Structured Data -->
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Organization",
- "name": "Noumenon Analytica",
- "url": "https://noumenonanalytica.com",
- "description": "Digital analytics consulting firm specializing in marketing intelligence and measurement architecture.",
- "sameAs": [
-   "https://www.linkedin.com"
- ]
-}
-</script>
+<title>Noumenon Analytica</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
+/* GLOBAL */
 body{
 margin:0;
 font-family:'Inter',sans-serif;
-background:#0b0f1a;
-color:white;
+background:#ffffff;
+color:#000;
 line-height:1.6;
 }
 
@@ -98,27 +44,19 @@ position:fixed;
 top:0;
 width:100%;
 display:flex;
-justify-content:space-between;
+justify-content:center; /* CENTERED */
 align-items:center;
-padding:20px 40px;
-background:rgba(5,10,30,0.6);
+padding:20px;
+background:rgba(255,255,255,0.95);
 backdrop-filter:blur(10px);
+border-bottom:1px solid #e5e7eb;
 z-index:100;
 }
 
 .logo{
 font-weight:600;
-}
-
-.menu a{
-color:white;
-margin-left:25px;
-text-decoration:none;
-opacity:0.8;
-}
-
-.menu a:hover{
-opacity:1;
+letter-spacing:2px;
+font-size:16px;
 }
 
 /* HERO */
@@ -130,34 +68,18 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-
-background:
-linear-gradient(rgba(5,10,30,0.7),rgba(5,10,30,0.9)),
-url("https://images.unsplash.com/photo-1451187580459-43490279c0fa");
-
-background-size:cover;
-background-position:center;
+background:#ffffff;
+padding-top:80px;
 }
 
-h1{
-font-size:64px;
-margin-bottom:10px;
-}
+/* PHILOSOPHY */
 
-.subtitle{
-font-size:22px;
-opacity:0.8;
-}
-
-.cta{
-margin-top:40px;
-padding:15px 40px;
-background:#5c7cff;
-border:none;
-border-radius:6px;
-color:white;
-font-size:16px;
-cursor:pointer;
+.kant-line{
+font-size:20px;
+max-width:700px;
+color:#4a4a4a;
+font-style:italic;
+line-height:1.8;
 }
 
 /* SECTIONS */
@@ -165,11 +87,10 @@ cursor:pointer;
 section{
 max-width:1100px;
 margin:auto;
-padding:100px 20px;
+padding:80px 20px;
 }
 
 h2{
-font-size:36px;
 text-align:center;
 margin-bottom:40px;
 }
@@ -179,20 +100,22 @@ margin-bottom:40px;
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:20px;
 }
 
 .card{
-background:#11162a;
-padding:30px;
-border-radius:10px;
-border:1px solid rgba(255,255,255,0.05);
+border:1px solid #e5e7eb;
+padding:25px;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 40px rgba(92,124,255,0.3);
+transform:translateY(-4px);
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+
+.card p{
+color:#4a4a4a;
 }
 
 /* MODAL */
@@ -204,48 +127,55 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.85);
+background:rgba(0,0,0,0.6);
 }
 
 .modal-content{
-background:#11162a;
+background:#fff;
 margin:8% auto;
-padding:40px;
+padding:30px;
 width:90%;
 max-width:500px;
-border-radius:10px;
 }
 
 input, textarea{
 width:100%;
-padding:12px;
-margin-top:10px;
-margin-bottom:20px;
-border:none;
-border-radius:6px;
-background:#1a2038;
-color:white;
+padding:10px;
+margin:10px 0;
+border:1px solid #e5e7eb;
 }
 
 .submit-btn{
-background:#5c7cff;
-padding:12px;
+background:#000;
+color:#fff;
+padding:10px;
 border:none;
 width:100%;
-border-radius:6px;
 cursor:pointer;
 }
 
 .close{
 float:right;
 cursor:pointer;
-font-size:22px;
 }
+
+/* FOOTER */
 
 footer{
 text-align:center;
-padding:40px;
-background:#070b14;
+padding:30px;
+border-top:1px solid #e5e7eb;
+color:#4a4a4a;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.kant-line{
+font-size:16px;
+}
+
 }
 
 </style>
@@ -254,58 +184,46 @@ background:#070b14;
 
 <body>
 
- <!-- Google Tag Manager (noscript) -->
+<!-- GTM NOSCRIPT -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBJR58VN"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
- <nav class="navbar">
-
-<div class="logo">Noumenon Analytica</div>
-
-<div class="menu">
-<a href="#services">Services</a>
-<a href="#about">About</a>
-</div>
-
+<nav class="navbar">
+<div class="logo">NOUMENON ANALYTICA</div>
 </nav>
 
 <header>
 
-<h1>Noumenon Analytica | GA4 Implementation & Digital Analytics Consulting </h1>
-
-<p class="subtitle">
-Digital Intelligence • Measurement Architecture • Data Strategy
+<p class="kant-line">
+“Look closely, what is small may be beautiful — Immanuel Kant”
 </p>
-
-<button class="cta" onclick="openForm()">Start a Conversation</button>
 
 </header>
 
 <section id="services">
 
-<h2>What We Do</h2>
+<h2>Services</h2>
 
 <div class="services">
 
 <div class="card">
 <h3>Analytics Implementation</h3>
-<p>GA4 implementation, event tracking and analytics infrastructure.</p>
+<p>GA4, GTM and server-side tracking for accurate data.</p>
 </div>
 
 <div class="card">
 <h3>Measurement Architecture</h3>
-<p>Design robust measurement frameworks for digital platforms.</p>
+<p>Structured frameworks aligned with business goals.</p>
 </div>
 
 <div class="card">
 <h3>Marketing Intelligence</h3>
-<p>Optimize marketing attribution and CAC efficiency.</p>
+<p>Clear attribution and performance measurement.</p>
 </div>
 
 <div class="card">
-<h3>Data Visualization</h3>
-<p>Executive dashboards using modern BI tools.</p>
+<h3>Dashboarding</h3>
+<p>Decision-ready dashboards for clarity and action.</p>
 </div>
 
 </div>
@@ -314,28 +232,21 @@ Digital Intelligence • Measurement Architecture • Data Strategy
 
 <section id="about">
 
-<h2>About Noumenon Analytica</h2>
+<h2>About</h2>
 
-<p style="text-align:center;max-width:800px;margin:auto;opacity:0.85">
-
-Noumenon Analytica is a digital intelligence consultancy helping
-organizations unlock the value of their data through analytics
-infrastructure, marketing measurement and strategic insight.
-
+<p style="text-align:center;max-width:700px;margin:auto;color:#4a4a4a">
+Noumenon Analytica builds reliable analytics systems and transforms fragmented data into actionable insight.
 </p>
 
 </section>
 
 <footer>
-
 © 2026 Noumenon Analytica
-
 </footer>
 
-<!-- CONTACT FORM -->
+<!-- MODAL (UNCHANGED) -->
 
 <div id="contactModal" class="modal">
-
 <div class="modal-content">
 
 <span class="close" onclick="closeForm()">×</span>
@@ -343,19 +254,13 @@ infrastructure, marketing measurement and strategic insight.
 <h2>Start a Conversation</h2>
 
 <form action="https://formspree.io/f/xdawlqdq" method="POST">
-
 <input type="text" name="name" placeholder="Your Name" required>
-
 <input type="email" name="email" placeholder="Email Address" required>
-
-<textarea name="message" rows="4" placeholder="Tell us about your project"></textarea>
-
-<button class="submit-btn">Send Message</button>
-
+<textarea name="message" rows="4"></textarea>
+<button class="submit-btn">Send</button>
 </form>
 
 </div>
-
 </div>
 
 <script>
